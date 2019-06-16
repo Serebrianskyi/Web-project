@@ -26,12 +26,17 @@ public class CommandsHolder {
                 put(GET + Paths.SHOW_PATIENT_INFO, new ShowPatientInfoCommand());
                 put(GET + Paths.SHOW_PATIENTS, new ShowPatientsCommand());
                 put(GET + Paths.SET_DIAGNOSIS, new SetDiagnosisCommand());
+                put(GET + Paths.SHOW_APPOINTMENTS, new ShowAppointmentCommand());
+
 
                 put(POST + Paths.LOGIN, new LoginCommand());
                 put(POST + Paths.REGISTRATION, new RegisterCommand());
                 put(POST + Paths.SHOW_PATIENTS, new ShowPatientsCommand());
                 put(POST + Paths.SHOW_PATIENT_INFO, new ShowPatientInfoCommand());
-
+                put(POST + Paths.ADD_PATIENT, new AddPatientCommand());
+                put(POST + Paths.ADD_DIAGNOSIS, new AddDiagnosisCommand());
+                put(POST + Paths.ADD_DRUGS_APPOINTMENT, new AddDrugAppointmentCommand());
+                put(POST + Paths.ADD_PROCEDURES_APPOINTMENT, new AddProcedureAppointmentCommand());
             }
         };
     }

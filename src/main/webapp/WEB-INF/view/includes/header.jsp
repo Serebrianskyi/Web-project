@@ -20,6 +20,6 @@
         <%@ include file="/WEB-INF/view/i18n/languages.jsp" %>
         <br>
         <div align="center">
-            <img src="${pageContext.request.contextPath}/img/hospital.jpg" height="100px" alt="Hospital"><br>
+            <img src="${pageContext.request.contextPath}/img/hospital.jpg" height="300px" alt="Hospital"><br>
             <h1><fmt:message key="${page_title}"/></h1>
         </div>

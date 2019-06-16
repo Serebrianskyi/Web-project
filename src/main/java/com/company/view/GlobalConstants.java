@@ -39,7 +39,7 @@ public interface GlobalConstants {
 
     String ADD_APPOINTMENT_FORM = "/add_appointment_form";
 
-    String ADD_APPOINTMENT = "/add_appointment";
+    String ADD_APPOINTMENTS = "/add_appointment";
 
 
     String REST = "/rest";
