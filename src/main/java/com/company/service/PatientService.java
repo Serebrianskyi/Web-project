@@ -44,7 +44,7 @@ public class PatientService {
     public boolean isPatientOnCure(int id) {
         try (ConnectionDao connection = factoryDao.getConnection()) {
             PatientDao patientDao = factoryDao.createPatientDao(connection);
-            return patientDao.getDiagnosisType(id) == DiagnosisType.PRIMARY_DIAGNOSIS;
+            return patientDao.getDiagnosisType(id) == DiagnosisType.PRIMARY;
         }
     }
 

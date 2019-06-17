@@ -9,7 +9,8 @@ public class EncodingFilter implements Filter {
     private String encodingString;
 
     @Override
-    public void doFilter(ServletRequest servletRequest, ServletResponse servletResponse, FilterChain filterChain) throws IOException, ServletException {
+    public void doFilter(ServletRequest servletRequest, ServletResponse servletResponse, FilterChain filterChain)
+            throws IOException, ServletException {
 
         String codeRequest = servletRequest.getCharacterEncoding();
         if (!encodingString.equalsIgnoreCase(codeRequest)) {

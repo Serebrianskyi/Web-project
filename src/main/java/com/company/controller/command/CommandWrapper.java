@@ -15,7 +15,8 @@ public abstract class CommandWrapper implements Command {
     private static final Logger LOGGER = LogManager.getLogger(CommandWrapper.class);
 
     @Override
-    public String execute(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+    public String execute(HttpServletRequest request, HttpServletResponse response)
+            throws ServletException, IOException {
         try {
             return doExecute(request, response);
         } catch (MyApplicationException e) {
@@ -25,5 +26,6 @@ public abstract class CommandWrapper implements Command {
         }
     }
 
-    abstract String doExecute(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException;
+    abstract String doExecute(HttpServletRequest request, HttpServletResponse response)
+            throws ServletException, IOException;
 }

@@ -8,8 +8,8 @@
             maxIdle="30"
             maxWait="10000"
             username="root"
-            password="pass"
-            driverClassName="com.mysql.jdbc.Driver"
-            url="jdbc:mysql://localhost/hospital"
+            password="root"
+            driverClassName="com.mysql.cj.jdbc.Driver"
+            url="jdbc:mysql://localhost:3306/hospital?useUnicode=true&amp;useJDBCCompliantTimezoneShift=true&amp;useLegacyDatetimeCode=false&amp;serverTimezone=UTC"
     />
 </Context>
